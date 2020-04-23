@@ -5,7 +5,6 @@ class Course extends Component {
     courseTitle: "",
   };
 
-  //   query params
   componentDidMount() {
     this.setTitle();
   }
@@ -16,6 +15,7 @@ class Course extends Component {
     this.setTitle();
   }
 
+  //query params
   setTitle() {
     console.log(this.props);
     const query = new URLSearchParams(this.props.location.search);
